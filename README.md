@@ -6,8 +6,8 @@
 - 컴파일 속도와 수행속도가 빠른 장점을 가진다.
 - GOLANG은 컴파일 시 자료형이 결정되는 정적 타입이다.
 
-### Benchmark
-#### GOLANG
+## Benchmark
+### GOLANG
 | Batch Size | Max Latency (s) | Avg Latency (s) | Throughput (TPS) |
 |:----------|:-------------:|:------:| :-----:|
 | 1 |  1.65 | 1.06 | 412.2 |
@@ -16,7 +16,7 @@
 | 30 | 10.21 | 5.44 | 60.1 |
 | 50 | 16.03 | 7.97 | 40.7 |
 
-#### Javascript
+### Javascript
 | Batch Size | Max Latency (s) | Avg Latency (s) | Throughput (TPS) |
 |:----------|:-------------:|:------:| :-----:|
 | 1 |  1.17 | 0.41 | 363.2 |
@@ -27,8 +27,26 @@
 | 50 | 15.13 | 6.42 | 13.4 |
 > block size : 8k byte
 
+## TDD
+패키지에 대한 spec 파일 작성하며 spec 파일은 이름 뒤에 ***_test*** 라고 명시 (***calc.go*** - ***calc_test.go***)
+
+### GOLANG 의 기본 Test 실행
+```
+$ go test <package name>
+```
+### Test Report
+gocov, gocov-html 패키지 설치
+```
+$ go get github.com/axw/gocov/gocov
+$ go get github.com/matm/gocov-html
+```
+Report 파일 생성
+```
+# gocov test <package name> | gocov-html > <html file name>
+gocov test unitTest | gocov-html > unitTest.html
+```
+
 ## Heading
----------------------------
 * 다른 패키지에서 사용가능한 함수는 대문자 사용, 소문자로 시작하면 build-in/private 함수
 * := 는 할당연산자로 var를 명시하지 않고 변수 선언과 초기화를 동시에 수행
 * golang은 couchbase, mongodb와 잘맞음
