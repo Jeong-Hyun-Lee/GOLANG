@@ -2,7 +2,7 @@
 * [GOLANG의 특징](#golang의-특징)
 * [Benchmark](#benchmark)
 * [GOLANG 설치](#golang-설치)
-* [TDD (Test Driven Development)](#tdd-\(test-driven-development\))
+* [TDD (Test Driven Development)](#tdd-test-driven-development)
 * [Heading](#heading)
 ## GOLANG의 특징
 - 구글이 2009년 개발한 프로그래밍 언어로 빠른 속도와 안정성, 간단한 문법이 특징이다.
