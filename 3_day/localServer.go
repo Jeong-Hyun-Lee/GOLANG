@@ -25,5 +25,5 @@ func main() {
 	http.HandleFunc("/bar", barHandler)
 	http.HandleFunc("/", homeHandler)
 	http.Handle("/foo", &fooHandler{})
-	http.ListenAndServe(":3000", nil)
+	http.ListenAndServe(":8080", nil)
 }
