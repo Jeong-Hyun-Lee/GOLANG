@@ -1,5 +1,9 @@
 # GOLANG
-
+* [GOLANG의 특징](#golang의-특징)
+* [Benchmark](#benchmark)
+* [GOLANG 설치](#golang-설치)
+* [TDD (Test Driven Development)](#tdd-\(test-driven-development\))
+* [Heading](#heading)
 ## GOLANG의 특징
 - 구글이 2009년 개발한 프로그래밍 언어로 빠른 속도와 안정성, 간단한 문법이 특징이다.
 - C언어의 do, do while, while, for등의 반복문들을 for문 하나로 간략화 하였다.
@@ -27,7 +31,10 @@
 | 50 | 15.13 | 6.42 | 13.4 |
 > block size : 8k byte
 
-## TDD
+## GOLANG 설치
+GOLANG 공식 사이트(https://golang.org/)에서 다운로드 후 설치한다.
+
+## TDD (Test Driven Development)
 패키지에 대한 spec 파일 작성하며 spec 파일은 이름 뒤에 ***_test*** 라고 명시 (***calc.go*** - ***calc_test.go***)
 
 ### GOLANG 의 기본 Test 실행
